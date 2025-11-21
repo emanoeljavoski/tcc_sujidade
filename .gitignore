@@ -1,0 +1,166 @@
+# Sistema de Inspeção de Painéis Solares - .gitignore
+# TCC Engenharia Mecatrônica
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyTorch
+*.pth
+*.pt
+!modelos_salvos/**/*.pt
+!modelos_salvos/**/*.pth
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema Operacional
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backend - Dados e Modelos
+dados/
+!dados/.gitkeep
+modelos_salvos/
+!modelos_salvos/.gitkeep
+logs/
+!logs/.gitkeep
+temp/
+!temp/.gitkeep
+
+# Logs e Cache
+*.log
+*.cache
+.cache/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Frontend - Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Frontend - Build e Dist
+dist/
+dist-ssr/
+*.local
+
+# Frontend - Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Frontend - Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dados temporários de imagens
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+!frontend/public/solar-panel.svg
+!src/assets/**/*.png
+!src/assets/**/*.jpg
+
+# Resultados de inspeções
+dados/resultado_inspecoes/
+!dados/resultado_inspecoes/.gitkeep
+
+# checkpoints do treinamento
+checkpoints/
+runs/
+wandb/
+
+# Pesos pré-treinados baixados automaticamente
+.ultralytics/
+.cache/
+
+# Roboflow credentials
+.roboflow/
+
+# Kaggle API
+.kaggle/
+
+# Datasets baixados
+dados/datasets_publicos/raw/
+!dados/datasets_publicos/.gitkeep
+
+# Profiler
+*.prof
+
+# Coverage html
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# TCC: ignorar rascunhos e texto HTML
+DESCARTADO/
+TCC_METODOLOGIA_RESULTADOS.html
+# TCC - permitir artefatos e modelo base
+!figuras/**
+!outputs/**
+!runs/**
+!yolo11n.pt

@@ -1,0 +1,84 @@
+{
+  "resumo": {
+    "status": "concluido",
+    "modelo_base": "resnet50",
+    "modelo_treinado": "/Users/Araxa/Documents/tccemanoel/sistema-paineis-solares/backend/resultados/cv_resnet50/fold_1/melhor_modelo.pth",
+    "dataset": "/Users/Araxa/Documents/tccemanoel/sistema-paineis-solares/backend/resultados/cv_resnet50/_tmp/cv_fold_1",
+    "dispositivo": "mps",
+    "epocas_treinadas": 4,
+    "tempo_total_seg": 65.07
+  },
+  "metricas_finais": {
+    "train_loss": 0.11463544704020023,
+    "train_acc": 0.7661290322580645,
+    "val_loss": 0.11699071526527405,
+    "val_acc": 0.8
+  },
+  "historico_completo": {
+    "epocas": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "train_loss": [
+      0.16842047683894634,
+      0.1261770036071539,
+      0.1100746626034379,
+      0.11463544704020023
+    ],
+    "train_acc": [
+      0.6370967741935484,
+      0.8387096774193549,
+      0.8145161290322581,
+      0.7661290322580645
+    ],
+    "val_loss": [
+      0.1532997526228428,
+      0.1268703192472458,
+      0.12064643576741219,
+      0.11699071526527405
+    ],
+    "val_acc": [
+      0.8,
+      0.8,
+      0.8,
+      0.8
+    ]
+  },
+  "metricas_teste": {
+    "limpo": {
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1-score": 0.8,
+      "support": 12.0
+    },
+    "sujo": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.8,
+      "support": 18.0
+    },
+    "accuracy": 0.8,
+    "macro avg": {
+      "precision": 0.8333333333333333,
+      "recall": 0.8333333333333333,
+      "f1-score": 0.8,
+      "support": 30.0
+    },
+    "weighted avg": {
+      "precision": 0.8666666666666667,
+      "recall": 0.8,
+      "f1-score": 0.8,
+      "support": 30.0
+    }
+  },
+  "hiperparametros": {
+    "batch_size": 16,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "optimizer": "AdamW",
+    "scheduler": "ReduceLROnPlateau",
+    "early_stopping_patience": 10
+  }
+}

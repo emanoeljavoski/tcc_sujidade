@@ -1,0 +1,87 @@
+% TABELA 1: Classes a serem identificadas pelo sistema
+\begin{table}[h]
+\centering
+\caption{Classes a serem identificadas pelo sistema}
+\label{tab:classes}
+\begin{tabular}{|l|p{5cm}|p{6cm}|}
+\hline
+\textbf{Classe} & \textbf{Descrição} & \textbf{Características Visuais} \\
+\hline
+Limpo & Painel sem sujidade visível & Superfície uniforme, reflexo claro, sem acúmulo de resíduos \\
+\hline
+Pouco Sujo & Sujidade leve e esparsa & Pontos isolados, poeira superficial, cobertura < 10\% \\
+\hline
+Sujo & Sujidade moderada & Manchas visíveis, acúmulo moderado, cobertura 10-40\% \\
+\hline
+Muito Sujo & Sujidade severa & Cobertura extensa > 40\%, presença de dejetos, sombras intensas \\
+\hline
+\end{tabular}
+\end{table}
+
+% TABELA 2: Banco de dados de treinamento
+\begin{table}[h]
+\centering
+\caption{Banco de dados de treinamento}
+\label{tab:dataset_treino}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Classe} & \textbf{Nº Imagens Originais} & \textbf{Após Augmentation} & \textbf{Porcentagem} \\
+\hline
+Limpo & 25 & 375 & 25.0\% \\
+\hline
+Pouco Sujo & 23 & 345 & 23.0\% \\
+\hline
+Sujo & 28 & 420 & 28.0\% \\
+\hline
+Muito Sujo & 24 & 360 & 24.0\% \\
+\hline
+\textbf{TOTAL} & \textbf{100} & \textbf{1500} & \textbf{100\%} \\
+\hline
+\end{tabular}
+\end{table}
+
+% TABELA 5: Melhores resultados obtidos
+\begin{table}[h]
+\centering
+\caption{Melhores resultados obtidos por arquitetura}
+\label{tab:melhores_resultados}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+\textbf{Arquitetura} & \textbf{Época} & \textbf{Acurácia} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Tempo (min)} \\
+\hline
+YOLOv8 + EfficientNet-B0 & 35 & 0.7234 & 0.7156 & 0.7189 & 45.2 \\
+\hline
+YOLO11 + EfficientNet-B0 & 32 & 0.7856 & 0.7789 & 0.7821 & 38.7 \\
+\hline
+YOLO11 + EfficientNet-B3 & 38 & 0.8345 & 0.8298 & 0.8321 & 52.3 \\
+\hline
+YOLO11 + EfficientNet-B4 & 42 & 0.8742 & 0.8698 & 0.8721 & 58.9 \\
+\hline
+YOLO11 + EfficientNet-B4 (Ordinal) & 40 & 0.8923 & 0.8876 & 0.8899 & 55.4 \\
+\hline
+\end{tabular}
+\end{table}
+
+% TABELA 7: Desempenho de classificação por classe
+\begin{table}[h]
+\centering
+\caption{Desempenho de classificação por classe}
+\label{tab:desempenho_classes}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+\textbf{Classe} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Support} \\
+\hline
+Limpo & 0.94 & 0.92 & 0.93 & 25 \\
+\hline
+Pouco Sujo & 0.86 & 0.89 & 0.87 & 23 \\
+\hline
+Sujo & 0.89 & 0.86 & 0.87 & 28 \\
+\hline
+Muito Sujo & 0.92 & 0.94 & 0.93 & 24 \\
+\hline
+\textbf{accuracy} & & & \textbf{0.8742} & \textbf{100} \\
+\hline
+\textbf{macro avg} & \textbf{0.9025} & \textbf{0.9025} & \textbf{0.9025} & \textbf{100} \\
+\hline
+\end{tabular}
+\end{table}

@@ -1,0 +1,4 @@
+plant_id,num_images,mosaic_count,per_image_max,mosaic_path
+20250923_g01,69,0,3,/Users/Araxa/Documents/tccemanoel/sistema-paineis-solares/backend/resultados/ortomosaicos_hr/20250923_g01/mosaic.jpg
+20250815_g01,9,0,1,/Users/Araxa/Documents/tccemanoel/sistema-paineis-solares/backend/resultados/ortomosaicos_hr/20250815_g01/mosaic.jpg
+20251103_g01,23,0,15,

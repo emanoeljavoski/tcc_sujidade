@@ -1,0 +1,89 @@
+{
+  "resumo": {
+    "status": "concluido",
+    "modelo_base": "resnet50",
+    "modelo_treinado": "/Users/Araxa/Documents/tccemanoel/sistema-paineis-solares/backend/resultados/cv_resnet50/fold_2/melhor_modelo.pth",
+    "dataset": "/Users/Araxa/Documents/tccemanoel/sistema-paineis-solares/backend/resultados/cv_resnet50/_tmp/cv_fold_2",
+    "dispositivo": "mps",
+    "epocas_treinadas": 5,
+    "tempo_total_seg": 63.6
+  },
+  "metricas_finais": {
+    "train_loss": 0.10630516614764929,
+    "train_acc": 0.7983870967741935,
+    "val_loss": 0.1283893920481205,
+    "val_acc": 0.7
+  },
+  "historico_completo": {
+    "epocas": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "train_loss": [
+      0.17662471532821655,
+      0.1332074413076043,
+      0.1120870765298605,
+      0.10497713647782803,
+      0.10630516614764929
+    ],
+    "train_acc": [
+      0.5645161290322581,
+      0.7661290322580645,
+      0.782258064516129,
+      0.8064516129032258,
+      0.7983870967741935
+    ],
+    "val_loss": [
+      0.15683334693312645,
+      0.13896222040057182,
+      0.13341126590967178,
+      0.13179119676351547,
+      0.1283893920481205
+    ],
+    "val_acc": [
+      0.7,
+      0.7666666666666667,
+      0.7,
+      0.7,
+      0.7
+    ]
+  },
+  "metricas_teste": {
+    "limpo": {
+      "precision": 0.5714285714285714,
+      "recall": 1.0,
+      "f1-score": 0.7272727272727273,
+      "support": 12.0
+    },
+    "sujo": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 18.0
+    },
+    "accuracy": 0.7,
+    "macro avg": {
+      "precision": 0.7857142857142857,
+      "recall": 0.75,
+      "f1-score": 0.696969696969697,
+      "support": 30.0
+    },
+    "weighted avg": {
+      "precision": 0.8285714285714286,
+      "recall": 0.7,
+      "f1-score": 0.6909090909090909,
+      "support": 30.0
+    }
+  },
+  "hiperparametros": {
+    "batch_size": 16,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "optimizer": "AdamW",
+    "scheduler": "ReduceLROnPlateau",
+    "early_stopping_patience": 10
+  }
+}

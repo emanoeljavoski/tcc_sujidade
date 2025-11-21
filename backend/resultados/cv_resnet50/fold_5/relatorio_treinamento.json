@@ -1,0 +1,89 @@
+{
+  "resumo": {
+    "status": "concluido",
+    "modelo_base": "resnet50",
+    "modelo_treinado": "/Users/Araxa/Documents/tccemanoel/sistema-paineis-solares/backend/resultados/cv_resnet50/fold_5/melhor_modelo.pth",
+    "dataset": "/Users/Araxa/Documents/tccemanoel/sistema-paineis-solares/backend/resultados/cv_resnet50/_tmp/cv_fold_5",
+    "dispositivo": "mps",
+    "epocas_treinadas": 5,
+    "tempo_total_seg": 53.0
+  },
+  "metricas_finais": {
+    "train_loss": 0.09869397152215242,
+    "train_acc": 0.8083333333333333,
+    "val_loss": 0.09011116996407509,
+    "val_acc": 0.8529411764705882
+  },
+  "historico_completo": {
+    "epocas": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "train_loss": [
+      0.1614407580345869,
+      0.12318162340670824,
+      0.10231849458068609,
+      0.10460080578923225,
+      0.09869397152215242
+    ],
+    "train_acc": [
+      0.6916666666666667,
+      0.8083333333333333,
+      0.825,
+      0.8083333333333333,
+      0.8083333333333333
+    ],
+    "val_loss": [
+      0.14075819899638495,
+      0.10999048749605815,
+      0.10095599417885144,
+      0.09605128318071365,
+      0.09011116996407509
+    ],
+    "val_acc": [
+      0.8235294117647058,
+      0.8529411764705882,
+      0.8529411764705882,
+      0.8529411764705882,
+      0.8529411764705882
+    ]
+  },
+  "metricas_teste": {
+    "limpo": {
+      "precision": 0.7619047619047619,
+      "recall": 1.0,
+      "f1-score": 0.8648648648648648,
+      "support": 16.0
+    },
+    "sujo": {
+      "precision": 1.0,
+      "recall": 0.7222222222222222,
+      "f1-score": 0.8387096774193548,
+      "support": 18.0
+    },
+    "accuracy": 0.8529411764705882,
+    "macro avg": {
+      "precision": 0.8809523809523809,
+      "recall": 0.8611111111111112,
+      "f1-score": 0.8517872711421097,
+      "support": 34.0
+    },
+    "weighted avg": {
+      "precision": 0.8879551820728291,
+      "recall": 0.8529411764705882,
+      "f1-score": 0.8510180009231242,
+      "support": 34.0
+    }
+  },
+  "hiperparametros": {
+    "batch_size": 16,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "optimizer": "AdamW",
+    "scheduler": "ReduceLROnPlateau",
+    "early_stopping_patience": 10
+  }
+}
